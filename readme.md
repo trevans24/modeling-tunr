@@ -1,4 +1,4 @@
-#Tunr
+#Modeling Tunr
 
 > _This is a suggested pair programming activity._
 
