@@ -90,7 +90,8 @@ A whole bunch of migrations, and your `schema.rb` file should look like this:
 
 ##Bonus
 
-An artist can have many songs and a manager can have many artists: configure your app to make sure it is configured with these relationships using [Active Record Associations](http://guides.rubyonrails.org/association_basics.html). (We're learning this next week.)
+An artist can have many songs and a manager can have many artists: configure your app to make sure it is configured with these relationships using [Active Record Associations](http://guides.rubyonrails.org/association_basics.html).
+
 * _Hint: In addition to the code you have to add to the models, you'll have to add foreign keys to both the `artists` and `songs` tables._
 
 ### Self Evaluation
