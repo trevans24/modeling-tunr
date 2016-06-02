@@ -27,7 +27,7 @@ You and the people at Tunr want to add some functionality to your talent managem
 
 - Sprint 2: User can CRUD songs
 
-  - Same as above, give the song attributes `name`, `photo_url`, `nationality`, `instrument`, and `home_address`.
+  - Same as above, give the song attributes `title`, `duration`, `date_of_release`, and `album_title`.
 
 - Sprint 3: User can see some data populated in the application
 
@@ -54,7 +54,6 @@ You and the people at Tunr want to add some functionality to your talent managem
     - Duration: 3:31
     - Date of Release: 7/13/2015
     - Album Title: Best Album Ever
-    - Artist Last Name: Pavarotti
 
 ##Bonus
 
