@@ -1,3 +1,5 @@
+![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
+
 #Modeling Tunr
 
 > _This is a suggested pair programming activity._
@@ -90,3 +92,14 @@ A whole bunch of migrations, and your `schema.rb` file should look like this:
 
 An artist can have many songs and a manager can have many artists: configure your app to make sure it is configured with these relationships using [Active Record Associations](http://guides.rubyonrails.org/association_basics.html). (We're learning this next week.)
 * _Hint: In addition to the code you have to add to the models, you'll have to add foreign keys to both the `artists` and `songs` tables._
+
+### Self Evaluation
+
+During the previous exercise, rate your progress on a scale of 1-5 (5 being the highest) for the following criteria:
+
+- **Persistence:** Do you handle frustration well? Do you independently pursue understanding?
+- **Organization:** Do you thoughtfully implement best coding patterns and practices?
+- **Collaboration:** Do you make an effort solve problems and share your ideas with others?
+- **Communication:** Do you clearly convey your thoughts to others in illustrative and clear ways?
+- **Self-compassion:** Do you make productive use of turning failures into learning opportunities?
+- **Resourcefulness:** Do make an effort to compare and contrast new ideas with ones you already know? 
