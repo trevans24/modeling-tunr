@@ -5,7 +5,7 @@ class CreateArtistsTable < ActiveRecord::Migration
        t.string :photo_url
        t.string :nationality
 
-       t.timestamps
+       t.timestamps null: true
      end
   end
 end
