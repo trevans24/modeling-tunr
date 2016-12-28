@@ -12,8 +12,9 @@ You and the people at Tunr want to add some functionality to your talent managem
 
 * Use the code in `starter-code` to get started!
 * `npm install` and `--save` the following packages
-	* `express` `sequelize` `pg` `pg-hstore`
-* Somehow set up the DB
+	* `express` `sequelize` `pg` `pg-hstore` `ejs`
+* Look inside `models/index.js` and create the database at the end of the connect URL (in the `psql` console)
+* Replace the `<username>` field with your local Mac username
 * Run nodemon on `server.js`
 * [Sequelize Docs](http://docs.sequelizejs.com/en/latest/)
 * Keep an eye on your `schema.rb` file (but not touching it) to see that your migrations are working properly!
