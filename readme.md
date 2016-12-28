@@ -48,7 +48,7 @@ You and the people at Tunr want to add some functionality to your talent managem
   **Artist**:  
 
     - Name: Luciano Pavarotti
-    - Photo URL: "http://img.informador.com.mx/biblioteca/imagen/677x508/811/810055.jpg"
+    - Photo URL: http://img.informador.com.mx/biblioteca/imagen/677x508/811/810055.jpg
     - Nationality: Italiano
     - Instrument: Voice
     - Home Address: 1 Strada Roma
