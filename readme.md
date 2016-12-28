@@ -8,11 +8,14 @@
 
 You and the people at Tunr want to add some functionality to your talent management application. You and your parter get the benefit of starting with the existing application that can already CRUD artists. Now Tunr has hired you guys to also keep track of their managers and songs!
 
-## Starting Advice
+## Starting Off
 
 * Use the code in `starter-code` to get started!
-* Don't forget to `bundle`, `rake db:create`, `rake db:migrate`, `rackup` etc...
-* [ActiveRecord Official Docs](http://guides.rubyonrails.org/active_record_basics.html)
+* `npm install` and `--save` the following packages
+	* `express` `sequelize` `pg` `pg-hstore`
+* Somehow set up the DB
+* Run nodemon on `server.js`
+* [Sequelize Docs](http://docs.sequelizejs.com/en/latest/)
 * Keep an eye on your `schema.rb` file (but not touching it) to see that your migrations are working properly!
 * Think about the most appropriate datatype for each migration.
 * If you get stuck, get unstuck! Advice for getting unstuck includes:
