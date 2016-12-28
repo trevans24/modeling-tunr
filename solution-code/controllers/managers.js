@@ -1,14 +1,18 @@
 var db = require('../models');
 var Manager = db.models.Manager;
+var Artist = db.models.Artist;
+var Ad = db.models.Ad;
 
 function index(req, res) {
-	Manager.findAll().then(function(managers) {
+	Manager.findAll({include: Ad}).then(function(managers) {
 		res.render("managers/index", {managers: managers});
 	});
 }
 
 function show(req, res) {
-  Manager.findById(req.params.id)
+  Manager.findById(req.params.id, {
+    include: Artist
+  })
   .then(function(manager){
     if(!manager) return error(res, "not found");
     res.render("managers/show", {manager: manager});
