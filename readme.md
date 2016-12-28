@@ -1,8 +1,10 @@
+<!--10:50 10 minutes for setup -->
+
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
-#Modeling Tunr
+# Modeling Tunr
 
-> _This is a suggested pair programming activity._
+> _This is a pair programming activity._
 
 You and the people at Tunr want to add some functionality to your talent management application. You and your parter get the benefit of starting with the existing application that can already CRUD artists. Now Tunr has hired you guys to also keep track of their managers and songs!
 
@@ -55,7 +57,7 @@ You and the people at Tunr want to add some functionality to your talent managem
     - Date of Release: 7/13/2015
     - Album Title: Best Album Ever
 
-##Bonus
+## Bonus
 
 An artist can have many songs and a manager can have many artists: configure your app to make sure it is configured with these relationships using [Active Record Associations](http://guides.rubyonrails.org/association_basics.html).
 
