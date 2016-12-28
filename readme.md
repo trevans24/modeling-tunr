@@ -43,7 +43,13 @@ You and the people at Tunr want to add some functionality to your talent managem
 
 - Sprint 3: User can see some data populated in the application
 
-  - Seed your application with some data. You may want to check the [last lesson](https://github.com/den-wdi-2/sequelize_intro) for an idea of how to create new items in the database. Put the following in a `db/seed.js` file:
+  - Seed your application with some data. 
+  	- Check out the almost-complete Artist creation, and fill in the correct info.
+	- Follow this pattern for Manager and Song creation.
+	- It would be a good idea to chain your `create`s with `.then`s.  
+	- Don't forget to `.exit()` when you're done with your last `create`.
+  
+Put the following into your DB with `db/seed.js`:
 
   **Artist**:  
 
