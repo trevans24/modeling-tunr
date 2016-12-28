@@ -12,7 +12,7 @@ You and the people at Tunr want to add some functionality to your talent managem
 
 * Use the code in `starter-code` to get started!
 * `npm install` and `--save` the following packages
-	* `express` `sequelize` `pg` `pg-hstore` `ejs`
+	* `express` `sequelize` `pg` `pg-hstore` `ejs` `body-parser`
 * Look inside `models/index.js` and create the database at the end of the connect URL (in the `psql` console)
 * Replace the `<username>` field with your local Mac username
 * Run nodemon on `server.js`
