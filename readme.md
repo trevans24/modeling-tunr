@@ -15,34 +15,40 @@ You and the people at Tunr want to add some functionality to your talent managem
 	* `express` `sequelize` `pg` `pg-hstore` `ejs` `body-parser` `method-override`
 * Look inside `models/index.js` and create the database at the end of the connect URL (in the `psql` console)
 * Replace the `<username>` field with your local Mac username
+* Look at `db/dbSetup.js`. Get a basic idea for what it is doing, then run it with `node`.
 * Run nodemon on `server.js`
 * [Sequelize Docs](http://docs.sequelizejs.com/en/latest/)
-* Keep an eye on your `schema.rb` file (but not touching it) to see that your migrations are working properly!
-* Think about the most appropriate datatype for each migration.
+* Lean heavily on your `starter-code`, but go slowly--one function, one route at a time
+* Make sure you test early and often, preferably multiple times per step (bullet point)
 * If you get stuck, get unstuck! Advice for getting unstuck includes:
 	* Not freezing up but continually trying new things (googling, reading docs, experimenting, etc)
 	* Identifying once you are stuck, as you have already tried all options you can think of
-	* Honing in on your gap in knowledge by phrasing a specific question
+	* Homing in on your gap in knowledge by phrasing a specific question
 	* Close your knowledge gap by ASKING that question to someone!
 
 ## Requirements
 
 - Sprint 1: User can CRUD managers
+  - Create managers routes in your `routes.js` file, following the same format as artists.  For now, these can just send "Hello World" responses.
+  - Create `managers.js` in your `controllers` folder and give it all the functions you already have for artists.  Link this up to your `routes.js` file.
+  - Create a `Manager` model and table in your database. Give them the attributes `name`, `email`, `office_number`, and `cell_phone_number` all type `String`.
 
-  - Create a `Manager` model and table in your database. Give them the attributes `name`, `email`, `office_number`, and `cell_phone_number` all type `String`. *Hint: Make sure that the new file is being required in your `config.ru`*
+>**Hint:** If you see an error saying that the relation "managers" does not exist, you should probably run `dbSetup.js` again.
 
 - Sprint 2: User can CRUD songs
 
+  - Same as above, create songs routes.
+  - Same as above, create songs controllers.
   - Same as above, give the song attributes `title`, `duration`, `date_of_release`, and `album_title`.
 
 - Sprint 3: User can see some data populated in the application
 
-  - Seed your application with some data:
+  - Seed your application with some data. You may want to check the [last lesson](https://github.com/den-wdi-2/sequelize_intro) for an idea of how to create new items in the database. Put the following in a `db/seed.js` file:
 
   **Artist**:  
 
     - Name: Luciano Pavarotti
-    - Photo URL: "http://artcreationforever.com/images/luciano-pavarotti/luciano-pavarotti-03.jpg"
+    - Photo URL: "http://img.informador.com.mx/biblioteca/imagen/677x508/811/810055.jpg"
     - Nationality: Italiano
     - Instrument: Voice
     - Home Address: 1 Strada Roma
@@ -60,23 +66,6 @@ You and the people at Tunr want to add some functionality to your talent managem
     - Duration: 3:31
     - Date of Release: 7/13/2015
     - Album Title: Best Album Ever
-
-## Bonus
-
-An artist can have many songs and a manager can have many artists: configure your app to make sure it is configured with these relationships using [Active Record Associations](http://guides.rubyonrails.org/association_basics.html).
-
-* _Hint: In addition to the code you have to add to the models, you'll have to add foreign keys to both the `artists` and `songs` tables._
-
-### Self Evaluation
-
-During the previous exercise, rate your progress on a scale of 1-5 (5 being the highest) for the following criteria:
-
-- **Persistence:** Do you handle frustration well? Do you independently pursue understanding?
-- **Organization:** Do you thoughtfully implement best coding patterns and practices?
-- **Collaboration:** Do you make an effort solve problems and share your ideas with others?
-- **Communication:** Do you clearly convey your thoughts to others in illustrative and clear ways?
-- **Self-compassion:** Do you make productive use of turning failures into learning opportunities?
-- **Resourcefulness:** Do make an effort to compare and contrast new ideas with ones you already know?
 
 ## Licensing
 All content is licensed under a CC­BY­NC­SA 4.0 license.
