@@ -5,8 +5,13 @@
   <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="/css/reset.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <script src="/bower_components/angular/angular.min.js"></script>
+  <script src="/bower_components/angular-route/angular-route.min.js"></script>
+  <script src="/js/client.js"></script>  
+  <script src="/js/controllers/artist.js"></script> 
+  <script src="/js/controllers/manager.js"></script> 
 </head>
-<body>
+<body ng-app="tunrApp">
   <header>
     <nav>
       <ul>
@@ -18,3 +23,10 @@
     </nav>
   </header>
   <main>
+    <ng-view></ng-view>
+  </main>
+  <footer>
+    &copy; Tun.r
+  </footer>
+</body>
+</html>

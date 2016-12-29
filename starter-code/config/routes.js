@@ -1,37 +1,30 @@
 var express = require('express');
 var router = express.Router();
 var artistsController = require('../controllers/artists.js');
-//Main Routes
-
-router.get('/', function(req, res) {
-  res.render('home');
-});
-
-router.get('/about', function(req, res) {
-  res.render('about');
-});
+var managersController = require('../controllers/managers.js');
 
 //Artist Routes
   
 // index
-router.get('/artists', artistsController.index);
-
-// new
-router.get('/artists/new', artistsController.newArtist);
+router.get('/api/artists', artistsController.index);
 
 // create
-router.post('/artists', artistsController.create);
+router.post('/api/artists', artistsController.create);
 
 // show
-router.get('/artists/:id', artistsController.show);
-
-// edit
-router.get('/artists/:id/edit', artistsController.edit);
+router.get('/api/artists/:id', artistsController.show);
 
 // update
-router.put('/artists/:id', artistsController.update);
+router.put('/api/artists/:id', artistsController.update);
 
 // destroy
-router.post('/artists/:id/delete', artistsController.destroy);
+router.delete('/api/artists/:id', artistsController.destroy);
+
+//Manager Routes
+
+// index
+router.get('/api/managers', managersController.index);
+
+//Song Routes
 
 module.exports = router;
