@@ -12,11 +12,14 @@ You and the people at Tunr want to add some functionality to your talent managem
 
 * Use the code in `starter-code` to get started!
 * `npm install` and `--save` the following packages
-	* `express` `sequelize` `pg` `pg-hstore` `ejs` `body-parser` `method-override`
+	* `express` `sequelize` `pg` `pg-hstore` `body-parser`
+* Go into the `public` folder, and `bower install` and `--save` the following packages
+	* `angular` `angular-route`
 * Look inside `models/index.js` and create the database at the end of the connect URL (in the `psql` console)
 * Replace the `<username>` field with your local Mac username
 * Look at `db/dbSetup.js`. Get a basic idea for what it is doing, then run it with `node`.
 * Run nodemon on `server.js`
+* Check out the functionality for viewing, adding, and updating artists.
 * [Sequelize Docs](http://docs.sequelizejs.com/en/latest/)
 * Lean heavily on your `starter-code`, but go slowly--one function, one route at a time
 * Make sure you test early and often, preferably multiple times per step (bullet point)
@@ -29,17 +32,20 @@ You and the people at Tunr want to add some functionality to your talent managem
 ## Requirements
 
 - Sprint 1: User can CRUD managers
+  - As of now, the only route that works for managers is `index`.  Go to `/managers` in your browser to check it out!  Now, build out the rest of the CRUD functionality, using the CRUDable `artists` as an inspiration.
+  - Fill out your front end controllers for `js/controllers/manager.js`, using `js/controllers/artist.js` as a model.  For nnow, it is okay to show plain HTML with no variables.
   - Create managers routes in your `routes.js` file, following the same format as artists.  For now, these can just send "Hello World" responses.
   - Create `managers.js` in your `controllers` folder and give it all the functions you already have for artists.  Link this up to your `routes.js` file.
-  - Create a `Manager` model and table in your database. Give them the attributes `name`, `email`, `office_number`, and `cell_phone_number` all type `String`.
+  - Finish the `Manager` model for your database. Give them the attributes `name`, `email`, `office_number`, and `cell_phone_number` all type `String`.
+  - Test out all your routes to make sure `manager` has the same functionality as `artist`.
 
 >**Hint:** If you see an error saying that the relation "managers" does not exist, you should probably run `dbSetup.js` again.
 
 - Sprint 2: User can CRUD songs
-
-  - Same as above, create songs routes.
-  - Same as above, create songs controllers.
-  - Same as above, give the song attributes `title`, `duration`, `date_of_release`, and `album_title`.
+  - Same as above, create `songs` controllers and templates for the front end.
+  - Same as above, create `songs` routes for the back end.
+  - Same as above, create `songs` controllers for the back end.
+  - Same as above, give the `Song` model attributes `title`, `duration`, `date_of_release`, and `album_title`.
 
 - Sprint 3: User can see some data populated in the application
 
