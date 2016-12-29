@@ -14,4 +14,3 @@ artistCreate()
 .then(function() {
 	process.exit();
 });
-

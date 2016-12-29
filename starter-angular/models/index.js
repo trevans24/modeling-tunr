@@ -8,6 +8,9 @@ module.exports.Sequelize = Sequelize;
 module.exports.sequelize = sequelize;
 
 var Artist = sequelize.import("./artist");
+var Manager = sequelize.import("./manager");
+
 module.exports.models = {
-	Artist: Artist
+	Artist: Artist,
+	Manager: Manager
 };

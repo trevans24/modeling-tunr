@@ -3,7 +3,7 @@ var Artist = db.models.Artist;
 
 function index(req, res) {
 	Artist.findAll().then(function(artists) {
-		res.render("artists/index", {artists: artists});
+		res.json(artists);
 	});
 }
 
@@ -13,25 +13,15 @@ function show(req, res) {
     if(!artist) return error(res, "not found");
     //Artist.sing();
     //artist.shout();
-    res.render("artists/show", {artist: artist});
+    res.json(artist);
   });	
-}
-
-function newArtist(req, res) {
-	res.render("artists/new");
 }
 
 function create(req, res) {
 	Artist.create(req.body).then(function(artist){
-    res.redirect("/artists/" + artist.id);
+    if(!artist) return error(res, "not saved");
+    res.json(artist);
   });
-}
-
-function edit(req, res) {
-  Artist.findById(req.params.id).then(function(artist){
-    if(!artist) return error(res, "not found");
-    res.render("artists/edit", {artist: artist});
-  });  
 }
 
 function update(req, res) {
@@ -41,7 +31,7 @@ function update(req, res) {
     return artist.updateAttributes(req.body);
   })
   .then(function(artist){
-    res.render("artists/show", {artist: artist});
+    res.json(artist);
   });
 }
 
@@ -58,8 +48,6 @@ function destroy(req, res) {
 
 module.exports.index = index;
 module.exports.show = show;
-module.exports.newArtist = newArtist;
 module.exports.create = create;
-module.exports.edit = edit;
 module.exports.update = update;
 module.exports.destroy = destroy;
