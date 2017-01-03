@@ -33,7 +33,7 @@ You and the people at Tunr want to add some functionality to your talent managem
 
 - Sprint 1: User can CRUD managers
   - As of now, the only route that works for managers is `index`.  Go to `/managers` in your browser to check it out!  Now, build out the rest of the CRUD functionality, using the CRUDable `artists` as an inspiration.
-  - Fill out your front end controllers for `js/controllers/manager.js`, using `js/controllers/artist.js` as a model.  For nnow, it is okay to show plain HTML with no variables.
+  - Fill out your front end controllers for `js/controllers/manager.js`, using `js/controllers/artist.js` as a model.  For now, it is okay to show plain HTML with no variables.
   - Create managers routes in your `routes.js` file, following the same format as artists.  For now, these can just send "Hello World" responses.
   - Create `managers.js` in your `controllers` folder and give it all the functions you already have for artists.  Link this up to your `routes.js` file.
   - Finish the `Manager` model for your database. Give them the attributes `name`, `email`, `office_number`, and `cell_phone_number` all type `String`.
