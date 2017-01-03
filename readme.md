@@ -8,6 +8,8 @@
 
 You and the people at Tunr want to add some functionality to your talent management application. You and your parter get the benefit of starting with the existing application that can already CRUD artists. Now Tunr has hired you guys to also keep track of their managers and songs!
 
+<!--Show the fully functioning artist part first -->
+
 ## Starting Off
 
 * Use the code in `starter-code` to get started!
@@ -20,7 +22,7 @@ You and the people at Tunr want to add some functionality to your talent managem
 * Look at `db/dbSetup.js`. Get a basic idea for what it is doing, then run it with `node`.
 * Run nodemon on `server.js`
 * Check out the functionality for viewing, adding, and updating artists.
-* [Sequelize Docs](http://docs.sequelizejs.com/en/latest/)
+* For reference, check the [Sequelize Docs](http://docs.sequelizejs.com/en/latest/) throughout this lab
 * Lean heavily on your `starter-code`, but go slowly--one function, one route at a time
 * Make sure you test early and often, preferably multiple times per step (bullet point)
 * If you get stuck, get unstuck! Advice for getting unstuck includes:
