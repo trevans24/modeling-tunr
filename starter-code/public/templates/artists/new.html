@@ -2,19 +2,19 @@
 
 <form ng-submit="artistNewController.saveArtist()">
   <label for="name">Name:</label>
-  <input ng-model="artistNewController.newArtist.name">
+  <input id="name" ng-model="artistNewController.newArtist.name">
 
   <label for="photoUrl">Photo URL:</label>
-  <input ng-model="artistNewController.newArtist.photoUrl">
+  <input id="photoUrl" ng-model="artistNewController.newArtist.photoUrl">
 
   <label for="nationality">Nationality:</label>
-  <input ng-model="artistNewController.newArtist.nationality">
+  <input id="nationality" ng-model="artistNewController.newArtist.nationality">
 
   <label for="instrument">Instrument:</label>
-  <input ng-model="artistNewController.newArtist.instrument">
+  <input id="instrument" ng-model="artistNewController.newArtist.instrument">
 
   <label for="home_address">Home Address:</label>
-  <input ng-model="artistNewController.newArtist.home_address">
+  <input id="home_address" ng-model="artistNewController.newArtist.home_address">
 
   <input type="submit" value="Create">
 </form>
