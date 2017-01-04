@@ -6,7 +6,7 @@
 
 > _This is a pair programming activity.  This means only one developer should be "driving" at a time, and we only need to use one computer per pair._
 
-You and the people at Tunr want to add some functionality to your talent management application. You and your parter get the benefit of starting with the existing application that can already CRUD artists. Now Tunr has hired you guys to also keep track of their managers and songs!
+You and the people at Tunr want to add some functionality to your talent management application. You and your partner get the benefit of starting with the existing application that can already CRUD artists. Now Tunr has hired you guys to also keep track of their managers and songs!
 
 <!--Show the fully functioning artist part first -->
 
