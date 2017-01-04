@@ -25,6 +25,7 @@ You and the people at Tunr want to add some functionality to your talent managem
 * For reference, check the [Sequelize Docs](http://docs.sequelizejs.com/en/latest/) throughout this lab
 * Lean heavily on your `starter-code`, but go slowly--one function, one route at a time
 * Make sure you test early and often, preferably multiple times per step (bullet point)
+* Tab and Sublime Text shortcuts are your friend, Copy-and-Paste is not.
 * If you get stuck, get unstuck! Advice for getting unstuck includes:
 	* Not freezing up but continually trying new things (googling, reading docs, experimenting, etc)
 	* Identifying once you are stuck, as you have already tried all options you can think of
@@ -42,9 +43,10 @@ You and the people at Tunr want to add some functionality to your talent managem
 		template: '<h1>New Manager Yay!</h1>'
 	})	
 	```
-	  - Create simple front-end templates for `show.html`, `edit.html`, and `new.html` in `public/templates/managers`, using the artists templates and the managers `index.html` as models.  Do NOT copy-and-paste, you need to change all the fields in this template to match your manager attributes, namely `name`, `email`, `office_number`, and `cell_phone_number`.  A good way to do this, is to have an artist template on the left side of your screen, and the corresponding manager template on the right side.<blockquote>**Note:** Once you are done creating a template, change the hard-coded `template` in your front-end route to a `templateUrl` pointing to the file.  Test each file to make sure it looks OK before you move on to the next one.</blockquote>
-	  - Fill out your front-end controllers for `public/js/controllers/manager.js`, using `public/js/controllers/artist.js` as a model. Follow the same left-side-right-side technique as you did for templates. Make sure to add these controllers into your front-end routes if you haven't already, using the artists routes as a model.
-	  - Create managers back-end routes in your `routes.js` file, following the same format as artists.  For now, these can just send "Hello World" responses.
+	  - Create simple front-end templates for `show.html`, `edit.html`, and `new.html` in `public/templates/managers`, using the artists templates and the managers `index.html` as models.  Do NOT copy-and-paste, you need to change all the fields in this template to match your manager attributes, namely `name`, `email`, `office_number`, and `cell_phone_number`.  A good way to do this, is to have an artist template on the left side of your screen, and the corresponding manager template on the right side.<blockquote>**Note:** Once you are done creating a template, change the hard-coded `template` in your front-end route to a `templateUrl` pointing to the file.  Test each file to make sure it looks OK before you move on to the next one. No managers showing up?  Exactly, we haven't made any data yet.  Let's do that now...</blockquote>
+	  - Fill out your front-end controllers for `public/js/controllers/manager.js`, using `public/js/controllers/artist.js` as a model. Follow the same left-side-right-side technique as you did for templates. We do not need `$http` yet, though.  For now, you can just create a hard-coded array of two managers like `Ricky Bobby` below and a similar one like `Bicky Robby`. Make sure to add these controllers into your front-end routes if you haven't already, using the artists routes as a model.
+	  - Create managers back-end routes in your `routes.js` file, following the same format as artists.  For now, these can just use the hard-coded array you created in the last step.
+	  - Now wire up `$http` on your front-end managers controller, 
 	  - Create `managers.js` in your back-end `controllers` folder and give it all the functions you already have for artists.  Link this up to your `routes.js` file.
 	  - Finish the `Manager` model for your database. Give them the attributes `name`, `email`, `office_number`, and `cell_phone_number` all type `String`.
 	  - Test out all your routes to make sure `manager` has the same functionality as `artist`.
