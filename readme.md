@@ -42,7 +42,8 @@ You and the people at Tunr want to add some functionality to your talent managem
 		template: '<h1>New Manager Yay!</h1>'
 	})	
 	```
-	  - Create simple front-end templates for `show.html`, `edit.html`, and `new.html` in `public/templates/managers`, using the artists templates and the managers `index.html` as models.  Do NOT copy-and-paste, you need to change all the fields in this template to match your manager attributes, namely `name`, `email`, `office_number`, and `cell_phone_number`.  A good way to do this, is to have an artist template on the left side of your screen, and the corresponding manager template on the right side.
+	  - Create simple front-end templates for `show.html`, `edit.html`, and `new.html` in `public/templates/managers`, using the artists templates and the managers `index.html` as models.  Do NOT copy-and-paste, you need to change all the fields in this template to match your manager attributes, namely `name`, `email`, `office_number`, and `cell_phone_number`.  A good way to do this, is to have an artist template on the left side of your screen, and the corresponding manager template on the right side.<blockquote>**Note:** Once you are done creating a template, change the hard-coded `template` in your front-end route to a `templateUrl` pointing to the file.  Test each file to make sure it looks OK before you move on to the next one.</blockquote>
+
 	  - Fill out your front-end controllers for `public/js/controllers/manager.js`, using `public/js/controllers/artist.js` as a model.
 	  - Create managers back-end routes in your `routes.js` file, following the same format as artists.  For now, these can just send "Hello World" responses.
 	  - Create `managers.js` in your back-end `controllers` folder and give it all the functions you already have for artists.  Link this up to your `routes.js` file.
