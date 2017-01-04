@@ -39,7 +39,7 @@ You and the people at Tunr want to add some functionality to your talent managem
 <!--20-25 minutes for this -->
 
 - Sprint 1: User can CRUD managers
-  - As of now, the only route that works for managers is `index`.  Go to `/managers` in your browser to check it out!  Now, build out the rest of the CRUD functionality, using the CRUDable `artists` as an inspiration.
+  - As of now, the only route that works for managers is `index`.  Go to `/managers` in your browser to check it out!  Not very impressive I suppose, but it will be once we build out the rest of the CRUD functionality, using the CRUDable `artists` as an inspiration.
 	  - Fill out your front-end routes in `js/client.js`, using the artists routes as a model.  For now, it is okay to show plain HTML with no template files or controllers.  Something like this: 
 	```js
 	//new
