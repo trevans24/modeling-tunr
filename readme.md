@@ -4,7 +4,7 @@
 
 # Modeling Tunr
 
-> _This is a pair programming activity._
+> _This is a pair programming activity.  This means only one developer should be "driving" at a time, and we only need to use one computer per pair._
 
 You and the people at Tunr want to add some functionality to your talent management application. You and your parter get the benefit of starting with the existing application that can already CRUD artists. Now Tunr has hired you guys to also keep track of their managers and songs!
 
@@ -35,8 +35,14 @@ You and the people at Tunr want to add some functionality to your talent managem
 
 - Sprint 1: User can CRUD managers
   - As of now, the only route that works for managers is `index`.  Go to `/managers` in your browser to check it out!  Now, build out the rest of the CRUD functionality, using the CRUDable `artists` as an inspiration.
-	  - Fill out your front-end routes in `js/client.js`, using the artists routes as a model.  For now, it is okay to show plain HTML with no templates or variables.  
-	  - Create simple front-end templates in `public/templates/managers`, using the artists templates and the managers `index.html` as models.
+	  - Fill out your front-end routes in `js/client.js`, using the artists routes as a model.  For now, it is okay to show plain HTML with no template files or controllers.  Something like this: 
+	```js
+	//new
+	.when('/managers/new', {
+		template: '<h1>New Manager Yay!</h1>'
+	})	
+	```
+	  - Create simple front-end templates for in `public/templates/managers`, using the artists templates and the managers `index.html` as models.  Do NOT copy-and-paste, you need to change all the fields in this template to match your manager attributes, namely `name`, `email`, `office_number`, and `cell_phone_number`.  A good way to do this, is to have an artist template on the left side of your screen, and the corresponding manager template on the right side.
 	  - Fill out your front-end controllers for `public/js/controllers/manager.js`, using `public/js/controllers/artist.js` as a model.
 	  - Create managers back-end routes in your `routes.js` file, following the same format as artists.  For now, these can just send "Hello World" responses.
 	  - Create `managers.js` in your back-end `controllers` folder and give it all the functions you already have for artists.  Link this up to your `routes.js` file.
