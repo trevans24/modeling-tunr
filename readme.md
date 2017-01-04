@@ -68,11 +68,11 @@ You and the people at Tunr want to add some functionality to your talent managem
 	  - Create `managers.js` in your back-end `controllers` folder and give it all the functions you already have in `artists.js`.  For now, these should just use the hard-coded array of managers you created earlier (copy it over from the front-end controller).
 	  <blockquote>**Note:** Before you move on to the next step, we need to test that our back end is working.  What mail-themed program might we use to test these API routes?</blockquote>
 	  - Now wire up `$http` on your front-end managers controller, following the left-side-right-side technique with the `artist.js` front-end controller.  Test this out on your browser.  Now we have everything we need except for data persistence.  Let's put a bow on our managers--*Sequelize style*.
-	  - Finish the `Manager` model for your database. Give them the attributes `name`, `email`, `office_number`, and `cell_phone_number`, all of type `String`.
+	  - Finish the `Manager` model for your database, inside your `models` folder. Give it the attributes `name`, `email`, `office_number`, and `cell_phone_number`, all of type `String`.
 	  - Now go back to your back-end `managers.js` controller and use the `artists.js` controller as a model for all of your DB methods.
 	  - Test out all your routes to make sure `manager` has the same functionality as `artist`.
 
->**Hint:** If you see an error saying that the relation "managers" does not exist, you should probably run `dbSetup.js` again.
+>**Hint:** Once you have finished the steps above, you will see an error in the terminal saying something like `column "email" of relation "managers" does not exist`. If you see this, you need to recreate your `managers` table, so you should run `dbSetup.js` again.
 
 - Sprint 2: User can CRUD songs
   - Same as above, create `songs` routes and templates for the front end.
