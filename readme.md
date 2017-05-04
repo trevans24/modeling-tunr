@@ -24,6 +24,10 @@ You and the people at Tunr want to add some functionality to your talent managem
 * Look at `db/dbSetup.js`. Get a basic idea for what it is doing, then run it with `node`.
 * Run nodemon on `server.js`
 * Open your app in Chrome and check out the functionality for viewing, adding, and updating artists.
+	* Create two artists
+	* Verify that you can see these artists
+	* Update a field for one of the artists
+	* Delete one of the artists
 * For reference, check the [Sequelize Docs](http://docs.sequelizejs.com/en/latest/) throughout this lab
 * Lean heavily on your `starter-code`, but go slowly--one function, one route at a time
 * Make sure you test early and often, preferably multiple times per step (bullet point)
@@ -35,8 +39,6 @@ You and the people at Tunr want to add some functionality to your talent managem
 	* Close your knowledge gap by ASKING that question to someone!
 
 ## Requirements
-
-
 
 <!--10:35 25 minutes-->
 
@@ -79,9 +81,9 @@ You and the people at Tunr want to add some functionality to your talent managem
 	<blockquote>**Note:** For `edit` and `new`, it is okay that your managers do not persist.  As long as you can see them in the Dev Tools console, you're ready to move on.</blockquote>
 	
 	  - Create managers back-end routes in your `routes.js` file, following the same format as artists.  
-	  - Create `managers.js` in your back-end `controllers` folder and give it all the functions you already have in `artists.js`.  For now, these should just use the hard-coded array of managers you created earlier (copy it over from the front-end controller).
+	  - Give `managers.js` in your back-end `controllers` folder all the functions you already have in `artists.js`.  For now, these should just use the hard-coded array of managers you created earlier (copy it over from the front-end controller).
 	  
-	  <blockquote>**Note:** Before you move on to the next step, we need to test that our back end is working.  What mail-themed program might we use to test these API routes?</blockquote>
+	  <blockquote>**Note:** We should test that our back end is working for POST, PUT, and DELETE before moving to the front end.  What mail-themed program might we use to test these API routes?</blockquote>
 	  
 	  - Now wire up `$http` on your front-end managers controller, following the left-side-right-side technique with the `artist.js` front-end controller.  Test this out on your browser.  Now we have everything we need except for data persistence.  Let's put a bow on our managers--*Sequelize style*.
 	  - Finish the `Manager` model for your database, inside your `models` folder. Give it the attributes `name`, `email`, `office_number`, and `cell_phone_number`, all of type `String`.
