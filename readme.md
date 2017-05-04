@@ -1,6 +1,6 @@
-<!--Actually 10:37-->
+<!--Actually 10:37 WDI2-->
 
-<!--10:50 10 minutes for setup -->
+<!--10:10 25 minutes-->
 
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
@@ -23,7 +23,7 @@ You and the people at Tunr want to add some functionality to your talent managem
 * Replace the `<username>` field with your local Mac username
 * Look at `db/dbSetup.js`. Get a basic idea for what it is doing, then run it with `node`.
 * Run nodemon on `server.js`
-* Check out the functionality for viewing, adding, and updating artists.
+* Open your app in Chrome and check out the functionality for viewing, adding, and updating artists.
 * For reference, check the [Sequelize Docs](http://docs.sequelizejs.com/en/latest/) throughout this lab
 * Lean heavily on your `starter-code`, but go slowly--one function, one route at a time
 * Make sure you test early and often, preferably multiple times per step (bullet point)
@@ -36,11 +36,13 @@ You and the people at Tunr want to add some functionality to your talent managem
 
 ## Requirements
 
+
+
+<!--10:35 25 minutes-->
+
 <!--Instructor should model the entire `show` route all the way through to the back end. Devs will be at half-mast for this.  Then turn over to devs to code themselves.-->
 
 <!--Started modeling at 10:54 -->
-
-<!--20-25 minutes for this -->
 
 <!--Finished modeling at 11:40 -->
 
