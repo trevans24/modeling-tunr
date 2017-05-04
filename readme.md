@@ -54,8 +54,11 @@ You and the people at Tunr want to add some functionality to your talent managem
 	})	
 	```
 	  - Create simple front-end templates for `show.html`, `edit.html`, and `new.html` in `public/templates/managers`, using the artists templates and the managers `index.html` as models.  Do NOT copy-and-paste, you need to change all the fields in these templates to match your manager attributes, namely `name`, `email`, `office_number`, and `cell_phone_number`.  A good way to do this is to have an artist template on the left side of your screen, and the corresponding manager template on the right side.
+	  
 	  <blockquote>**Note:** Once you are done creating a template, change the hard-coded `template` in your front-end route to a `templateUrl` pointing to the file.  Test each file to make sure it looks OK before you move on to the next one. No managers showing up?  Exactly, we haven't made any data yet.  Let's do that now...</blockquote>
+	  
 	  - Fill out your front-end controllers for `public/js/controllers/manager.js`, one at a time, using `public/js/controllers/artist.js` as a model. Follow the same left-side-right-side technique as you did for templates. We do not need `$http` yet, though.  For now, you can just create a hard-coded array of two managers like `Ricky Bobby` below and a similar one like `Bicky Robby`. That will look something like this:
+	  
 	  ```js
 
 	  var managers = [
@@ -68,11 +71,16 @@ You and the people at Tunr want to add some functionality to your talent managem
 		},
 		...
 	  ```	
+	  
 	<blockquote>**Note:** Make sure to add these manager controllers into your front-end routes if you haven't already, using the artists routes as a model.</blockquote>
+	
 	<blockquote>**Note:** For `edit` and `new`, it is okay that your managers do not persist.  As long as you can see them in the Dev Tools console, you're ready to move on.</blockquote>
+	
 	  - Create managers back-end routes in your `routes.js` file, following the same format as artists.  
 	  - Create `managers.js` in your back-end `controllers` folder and give it all the functions you already have in `artists.js`.  For now, these should just use the hard-coded array of managers you created earlier (copy it over from the front-end controller).
+	  
 	  <blockquote>**Note:** Before you move on to the next step, we need to test that our back end is working.  What mail-themed program might we use to test these API routes?</blockquote>
+	  
 	  - Now wire up `$http` on your front-end managers controller, following the left-side-right-side technique with the `artist.js` front-end controller.  Test this out on your browser.  Now we have everything we need except for data persistence.  Let's put a bow on our managers--*Sequelize style*.
 	  - Finish the `Manager` model for your database, inside your `models` folder. Give it the attributes `name`, `email`, `office_number`, and `cell_phone_number`, all of type `String`.
 	  - Now go back to your back-end `managers.js` controller and use the `artists.js` controller as a model for all of your DB methods.
