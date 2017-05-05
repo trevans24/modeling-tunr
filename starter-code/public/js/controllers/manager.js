@@ -71,12 +71,12 @@ ManagerEditController.$inject = ['$http', '$routeParams', '$location'];
 function ManagerEditController($http, $routeParams, $location) {
 	var vm = this;
 	vm.updateManager = updateManager;
-
+	
 	function getManager() {
 		console.log($routeParams.id);
 		$http.get('/api/managers/' + $routeParams.id)
 			.then(function(response) {
-				console.log("response", response);
+				console.log(response);
 				vm.updatedManager = response.data;
 			});
 	}
