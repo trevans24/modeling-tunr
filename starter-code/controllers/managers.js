@@ -38,7 +38,7 @@ function create(req, res) {
 }
 
 function update(req, res) {
-	manager.findById(req.params.id)
+	Manager.findById(req.params.id)
 	.then(function(manager) {
 		if(!manager) return error(res, "not found");
 		return manager.updateAttributes(req.body);
