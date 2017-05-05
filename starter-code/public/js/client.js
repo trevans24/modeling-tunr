@@ -48,18 +48,18 @@ angular.module("tunrApp", ['ngRoute'])
 				controller: "ManagerIndexController as managersController"
 			})
 			// new
-			.when('/managers/new', {
-				templateUrl: '/templates/managers/new.html'
-				controller: 'ManagerNewController as managersController'
-			})
+			// .when('/managers/new', {
+			// 	templateUrl: '/templates/managers/new.html'
+			// 	controller: 'ManagerNewController as managersController'
+			// })
 			// show
 			.when('/managers/:id', {
 				templateUrl: '/templates/managers/show.html',
 				controller: 'ManagerShowController as managersController'
-			})
-			// edit
-			.when('/managers/:id/edit', {
-				templateUrl: '/templates/managers/edit.html'
-				controller: 'ManagerEditController as managersController'
 			});
+			// edit
+			// .when('/managers/:id/edit', {
+			// 	templateUrl: '/templates/managers/edit.html'
+			// 	controller: 'ManagerEditController as managersController'
+			// });
   });
