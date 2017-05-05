@@ -37,6 +37,21 @@ function ManagerIndexController($http) {
 	getAllManagers();
 }
 
+ManagerNewController.$inject = ["$http", "$location"];
+function ManagerNewController($http, $location) {
+	var vm.this;
+	vm.saveManager = saveManager;
+
+	function saveManager() {
+		console.log(vm.newManager);
+		$http.post('/api/managers/', vm.newManager)
+			.then(function(response) {
+				var manager = response.data;
+				$location.path('/manager/' + manger.id);
+			});
+	}
+}
+
 ManagerShowController.$inject = ['$http', '$routeParams'];
 function ManagerShowController($http, $routeParams){
   var vm = this;
@@ -73,4 +88,6 @@ function ManagerEditController($http, $routeParams, $location) {
 				$location.path('/managers/' + manager.id);
 			});
 	}
+
+	getManager();
 }
