@@ -1,5 +1,8 @@
 	angular.module("tunrApp")
-	.controller("ManagerIndexController", ManagerIndexController);
+	.controller("ManagerIndexController", ManagerIndexController)
+	.controller('ManagerShowController', ManagerShowController)
+	.controller('ManagerEditController', ManagerEditController)
+	.controller('ManagerNewController', ManagerNewController);
 
 ManagerIndexController.$inject = ["$http"];
 function ManagerIndexController($http) {

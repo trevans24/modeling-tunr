@@ -1,6 +1,5 @@
 //Connect
 var Sequelize = require('sequelize');
-
 var sequelize = new Sequelize('postgres://troy@localhost:5432/tunr_models');
 
 //Export models and Sequelize for seed and dbSetup
