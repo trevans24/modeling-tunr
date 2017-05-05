@@ -39,7 +39,7 @@ function ManagerIndexController($http) {
 
 ManagerNewController.$inject = ["$http", "$location"];
 function ManagerNewController($http, $location) {
-	var vm.this;
+	var vm = this;
 	vm.saveManager = saveManager;
 
 	function saveManager() {

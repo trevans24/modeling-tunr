@@ -10,7 +10,19 @@ var artistCreate = function() {
   });
 };
 
+let managerCreate = function() {
+	return DB.Manager.create({
+		name: 'Ricky Bobby',
+		email: 'rickybobby@shakeandbake.com',
+		office_number: '18009999999',
+		cell_phone_number: '3038675309'
+	});
+};
+
 artistCreate()
 .then(function() {
-	process.exit();
+	managerCreate()
+	.then(()=>{
+		process.exit();
+	});
 });
